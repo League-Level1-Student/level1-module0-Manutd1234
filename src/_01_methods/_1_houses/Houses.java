@@ -7,5 +7,7 @@ public class Houses {
 		
 	public void run() {
 		// Check the recipe to find out what code to put here
+		Robot.Rob = new Robot
+			
 	}
 }
