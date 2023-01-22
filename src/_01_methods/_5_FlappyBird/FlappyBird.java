@@ -8,7 +8,7 @@ public class FlappyBird extends PApplet {
 
     @Override
     public void settings() {
-        size(WIDTH, HEIGHT);
+        size(800, 600);
     }
 
     @Override
