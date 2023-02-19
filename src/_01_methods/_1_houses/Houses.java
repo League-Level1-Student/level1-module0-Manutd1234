@@ -14,7 +14,7 @@ public class Houses {
 		Robot Rob=new Robot();
 		Rob.setX(800);
 		Rob.penDown();
-		Rob.turn(90);
+		Rob.turn(-90);
 		Rob.move(100);
 		Houses houseBuilder = new Houses();
 		houseBuilder.run();
