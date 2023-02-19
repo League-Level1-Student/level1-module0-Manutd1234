@@ -13,7 +13,7 @@ public class FlappyBird extends PApplet {
 
     @Override
     public void setup() {
-        
+         
     }
 
     @Override

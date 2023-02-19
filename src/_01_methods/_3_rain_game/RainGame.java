@@ -56,6 +56,7 @@ public class RainGame extends PApplet {
     @Override
     public void settings() {
         size(WIDTH, HEIGHT);
+        size(600,600);
     }
 
     @Override

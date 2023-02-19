@@ -36,6 +36,7 @@ public class MagicWorms extends PApplet {
     @Override
     public void settings() {
         size(WIDTH, HEIGHT);
+        size(600,400);
     }
 
     @Override
