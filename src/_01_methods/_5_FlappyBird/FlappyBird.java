@@ -3,8 +3,8 @@ package _01_methods._5_FlappyBird;
 import processing.core.PApplet;
 
 public class FlappyBird extends PApplet {
-    static final int WIDTH = 800;
     static final int HEIGHT = 600;
+	static final int WIDTH = 800;
 
     @Override
     public void settings() {

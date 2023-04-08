@@ -56,7 +56,8 @@ public class FinishLine {
 		rob.setSpeed(100);
 		rob.penDown();
 		
-		//Lines
+		//Line
+		for(int i =0; i <30; i++) {
 		rob.setX(0);
 		rob.setY(200);
 		rob.turn(90);
@@ -145,6 +146,8 @@ public class FinishLine {
 		rob.move(15);
 		rob.turn(180);
 		rob.move(30);
+		} 
+		
 	}
 	
 	static int getTotalDistance() {
