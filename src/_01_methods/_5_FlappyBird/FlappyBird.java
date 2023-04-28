@@ -8,17 +8,22 @@ public class FlappyBird extends PApplet {
 
     @Override
     public void settings() {
-        size(800, 600);
+    	size(WIDTH,HEIGHT);  
     }
 
     @Override
     public void setup() {
-         
+        
     }
 
     @Override
     public void draw() {
-        
+    	background(0, 0, 50);
+    	fill(0, 0, 50);
+    	stroke(0, 0, 10);
+    	ellipse(100 , 100, WIDTH, HEIGHT);
+    	int birdVelocity = -10;
+    	int gravity = 1;
     }
 
     static public void main(String[] args) {
