@@ -32,21 +32,26 @@ import processing.core.PApplet;
 public class MagicWorms extends PApplet {
     static final int WIDTH = 600;
     static final int HEIGHT = 400;
+int x = 10;
+int y = 10;
+int maxValue = 300
 
     @Override
     public void settings() {
         size(WIDTH, HEIGHT);
-        size(600,400);
+        background(0,0,0);
     }
 
     @Override
     public void setup() {
-
+    	
     }
 
     @Override
     public void draw() {
-
+    	  random(int maxValue);
+    	  fill(255,0,0);
+    	  
     }
 
     static public void main(String[] args) {

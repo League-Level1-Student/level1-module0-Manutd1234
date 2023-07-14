@@ -10,6 +10,8 @@ public class FlappyBird extends PApplet {
 	int birdVelocity = -10;
 	int gravity = 1; 
 	int pipeGap = 20;
+	int lowerY = 10;
+	
 		@Override
     public void settings() {
     	size(WIDTH,HEIGHT);  
@@ -31,12 +33,11 @@ public class FlappyBird extends PApplet {
 
     	
     }
-    
     @Override
     public void mousePressed() {
     	int upperPipeHeight = (int) random(100, 400);
     	lowerY = upperPipeHeight + pipeGap;
-    	
+    
     }
     static public void main(String[] args) {
         PApplet.main(FlappyBird.class.getName());
