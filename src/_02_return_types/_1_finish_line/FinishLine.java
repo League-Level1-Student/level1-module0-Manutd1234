@@ -58,94 +58,14 @@ public class FinishLine {
 		
 		//Line
 		for(int i =0; i <30; i++) {
-		rob.setX(0);
+		rob.setX(100);
 		rob.setY(200);
 		rob.turn(90);
 		rob.move(1000);
 		rob.setY(250);
 		rob.turn(180);
-		rob.move(1000);
-		
-		//F
-		rob.setX(300);
-		rob.setY(210);
-		rob.turn(180);
-		rob.move(20);
-		rob.turn(180);
-		rob.move(20);
-		rob.turn(-90);
-		rob.move(15);
-		rob.turn(-90);
-		rob.move(15);
-		rob.turn(180);
-		rob.move(15);
-		rob.turn(-90);
-		rob.move(15);
-		
-		//I
-		rob.setX(330);
-		rob.setY(210);
-		rob.turn(-90);
-		rob.move(20);
-		rob.turn(180);
 		rob.move(10);
-		rob.turn(-90);
-		rob.move(30);
-		rob.turn(-90);
-		rob.move(10);
-		rob.turn(180);
-		rob.move(20);
-		
-		//N
-		rob.setX(360);
-		rob.setY(240);
-		rob.turn(90);
-		rob.move(30);
-		rob.turn(135);
-		rob.move(40);
-		rob.turn(-135);
-		rob.move(30);
-		
-		//I
-		rob.setX(400);
-		rob.setY(210);
-		rob.turn(90);
-		rob.move(20);
-		rob.turn(180);
-		rob.move(10);
-		rob.turn(-90);
-		rob.move(30);
-		rob.turn(-90);
-		rob.move(10);
-		rob.turn(180);
-		rob.move(20);
-		
-		//S
-		rob.setX(430);
-		rob.turn(180);
-		rob.move(20);
-		rob.turn(-90);
-		rob.move(15);
-		rob.turn(-90);
-		rob.move(20);
-		rob.turn(90);
-		rob.move(15);
-		rob.turn(90);
-		rob.move(20);
-		
-		//H
-		rob.setX(460);
-		rob.setY(210);
-		rob.turn(90);
-		rob.move(30);
-		rob.turn(180);
-		rob.move(15);
-		rob.turn(90);
-		rob.move(20);
-		rob.turn(-90);
-		rob.move(15);
-		rob.turn(180);
-		rob.move(30);
+
 		} 
 		
 	}
