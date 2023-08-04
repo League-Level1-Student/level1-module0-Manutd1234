@@ -57,16 +57,15 @@ public class FinishLine {
 		rob.penDown();
 		
 		//Line
-		for(int i =0; i <30; i++) {
-		rob.setX(100);
-		rob.setY(200);
-		rob.turn(90);
-		rob.move(1000);
-		rob.setY(250);
-		rob.turn(180);
-		rob.move(10);
-
-		} 
+		for(int i =0; i <30; i++) 
+			rob.setX(100);
+			rob.setY(200);
+			rob.turn(90);
+			rob.move(1000);
+			rob.setY(250);
+			rob.turn(180);
+			rob.move(10);
+		
 		
 	}
 	
@@ -79,6 +78,7 @@ public class FinishLine {
 			return true;
 		}
 		return false;
+		JOption.pane.showInputDialog(Robot has finished it went )
 	}
 	
 }

@@ -34,7 +34,7 @@ public class MagicWorms extends PApplet {
     static final int HEIGHT = 400;
 int x = 10;
 int y = 10;
-int maxValue = 300
+int maxValue = random
 
     @Override
     public void settings() {
