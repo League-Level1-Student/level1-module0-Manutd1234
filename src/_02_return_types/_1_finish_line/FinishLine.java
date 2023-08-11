@@ -26,14 +26,15 @@ public class FinishLine {
 		Boolean hasFinished = hasCrossedFinishLine();
 		//5. If the robot has crossed the finish line... 
 			if(hasFinished) {
-				
+				 
 			}
 			//6. Use a pop up to say the robot finished and how far it went
-		// String input = JOptionPane.showInputDialog("The robot has finished and went )
+		
+			 String input = JOptionPane.showInputDialog("The robot has finished and went " );
 		
 		
 		//7. Else use a pop up to say the robot did not finish and how far it went
-		
+		JOptionPane.showInputDialog("the robot did not finsh and went  meters");
 	}
 	
 	static void crazyMove() {
@@ -64,7 +65,7 @@ public class FinishLine {
 			rob.setX(100);
 			rob.setY(200);
 			rob.turn(90);
-			rob.move(1000);
+			rob.move(550);
 			rob.setY(250);
 			rob.turn(180);
 			rob.move(10);
