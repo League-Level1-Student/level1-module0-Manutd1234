@@ -19,20 +19,10 @@ public class ListOfGoals {
 		
 		//4. Call the appropriate method to see if you put a lot of goals,
 		//   if you did put a lot of goals use a pop-up to say "Wow that's a lot of goals! Awesome!"
-		
+		 
 	}
 	
-	static void createListOfGoals() {
-		String input = "";
-		while(true) {
-			input = JOptionPane.showInputDialog("Enter a goal you have\n(Or X to stop entering goals)");
-			if( input.equalsIgnoreCase("X") ) {
-				break;
-			}
-			listOfGoals += input+ "\n";
-			numberOfGoals++;
-		}
-	}
+	static void createListOfGoals() {}
 	
 	static String getListOfGoals() {
 		return listOfGoals;
