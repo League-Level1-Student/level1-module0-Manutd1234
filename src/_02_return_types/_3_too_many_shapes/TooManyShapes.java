@@ -19,7 +19,7 @@ public class TooManyShapes {
 		//3. Call canMakeShape() and save what is returned into a variable
 		canMakeShape(5);
 		//4. If the shape CAN be drawn
-		canMakeShape();
+		canMakeShape(5);
 			//5. Call and save what is returned from calculateTurnAngle()
 			calculateTurnAngle(6);
 			//6. Use drawPolygons() to draw your shape
