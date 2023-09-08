@@ -34,7 +34,7 @@ public class PhotoQuiz {
 		// 4. add the image to the quiz window
 
 		// 5. call the pack() method on the quiz window
-		
+		    
 		// 6. ask a question that relates to the image
 
 		// 7. print "CORRECT" if the user gave the right answer
@@ -53,7 +53,7 @@ public class PhotoQuiz {
 		// 12. pack the quiz window
 
 		// 13. ask another question
-		
+		JOptionPane.showMessageDialog(null, "Whats 100x100");
 		// 14. check answer, say if correct or incorrect, etc
 
 	}

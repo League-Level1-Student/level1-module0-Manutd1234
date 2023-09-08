@@ -17,14 +17,14 @@ public class DrumKit implements MouseListener {
 
     public void run() {
         //  Make a JFrame variable and initialize it using "new JFrame()"
-
+    	JFrame drumkit = new JFrame();
         //  Make the frame visible and
         // set its default close operation to JFrame.EXIT_ON_CLOSE
-
+    	JFrame.EXIT_ON_CLOSE();
         //  Set the title of the frame
 
         //  Make a JPanel variable and initialize it using "new JPanel().
-
+    	JPanel j = new JPanel();
         //  Add the panel to the frame. (The panel is invisible.)
 
         //  Use the image of a drum provided ("snare.jpg") or
