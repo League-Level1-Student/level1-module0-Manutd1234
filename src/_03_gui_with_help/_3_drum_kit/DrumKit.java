@@ -17,25 +17,25 @@ public class DrumKit implements MouseListener {
 
     public void run() {
         //  Make a JFrame variable and initialize it using "new JFrame()"
-    	JFrame drumkit = new JFrame();
+    	JFrame rob = new JFrame();
         //  Make the frame visible and
         // set its default close operation to JFrame.EXIT_ON_CLOSE
-    	JFrame.EXIT_ON_CLOSE();
+    JFrame.EXIT_ON_CLOSE
         //  Set the title of the frame
 
         //  Make a JPanel variable and initialize it using "new JPanel().
-    	JPanel j = new JPanel();
+    	JPanel rob1 = new JPanel();
         //  Add the panel to the frame. (The panel is invisible.)
-
+    	
         //  Use the image of a drum provided ("snare.jpg") or
         //  download an image of a drum from the Internet and drop it into the
         //  Drum Kit recipe package.
 
         //  Put the name of the drum image file in a String variable.
-
+     	
         //  Edit the next line to use your String variable
         // drumLabel = createLabelImage(drumImageString);
-
+    	drumLabel = createLabelImage(drumImageString);
         //  Add the label to the panel
 
         //  Call the pack() method on the frame.
