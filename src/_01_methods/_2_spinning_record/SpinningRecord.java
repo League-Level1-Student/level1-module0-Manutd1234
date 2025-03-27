@@ -36,50 +36,59 @@ import processing.core.PImage;
  *    the record is spinning.
  */
 public class SpinningRecord extends PApplet {
-    static final int WIDTH = 600;
-    static final int HEIGHT = 600;
-    
-    Song song = new Song("awesomeTrack.mp3");
-    PImage pictureOfRecord;
-    
-    @Override
-    public void settings() {
-        size(WIDTH, HEIGHT);
-    }
+	static final int WIDTH = 600;
+	static final int HEIGHT = 600;
 
-    @Override
-    public void setup() {
-        
-    }
+	Song song = new Song("awesomeTrack.mp3");
+	PImage pictureOfRecord;
+	int spin = 10;
+	int amountToIncrease = 1;
+	@Override
+	public void settings() {
+		size(WIDTH, HEIGHT);
+	}
 
-    @Override
-    public void draw() {
-        
-    }
+	@Override
+	public void setup() {
+		pictureOfRecord = loadImage("images/record.png");
+		pictureOfRecord.resize(width, height);
+		image(pictureOfRecord, 0, 0);
+	}
 
-    static public void main(String[] args) {
-        PApplet.main(SpinningRecord.class.getName());
-    }
-    
-    /*********************** DO NOT MODIFY THE CODE BELOW ********************/
+	@Override
+	public void draw() {
+		if(mousePressed) {
+			spin+=amountToIncrease;
+			amountToIncrease++;
+		rotateImage(pictureOfRecord , spin);
+song.play();
+		image(pictureOfRecord,0,0);
+		}
+	}
 
-    void rotateImage(PImage image, int amountToRotate) {
-        translate(width / 2, height / 2);
-        rotate(amountToRotate * TWO_PI / 360);
-        translate(-image.width / 2, -image.height / 2);
-    }
+	static public void main(String[] args) {
+		PApplet.main(SpinningRecord.class.getName());
+	}
 
-    class Song extends Sound {
-        public Song(String songAddress) {
-            super(songAddress);
-        }
+	/*********************** DO NOT MODIFY THE CODE BELOW ********************/
 
-        @Override
-        public void play() {
-            if( !super.isPlaying() ) {
-                System.out.println("playing");
-                super.play();
-            }
-        }
-    }
+	void rotateImage(PImage image, int amountToRotate) {
+		translate(width / 2, height / 2);
+		rotate(amountToRotate * TWO_PI / 360);
+		translate(-image.width / 2, -image.height / 2);
+	}
+
+	class Song extends Sound {
+		public Song(String songAddress) {
+			super(songAddress);
+		}
+
+		@Override
+		public void play() {
+			if( !super.isPlaying() ) {
+				System.out.println("playing");
+				super.play();
+			}
+		}
+	}
 }
