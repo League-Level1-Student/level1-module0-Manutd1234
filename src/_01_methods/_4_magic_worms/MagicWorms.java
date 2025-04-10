@@ -1,5 +1,8 @@
 package _01_methods._4_magic_worms;
 
+import java.awt.Color;
+import java.util.Random;
+
 import processing.core.PApplet;
 
 /*
@@ -30,9 +33,11 @@ import processing.core.PApplet;
  *    "red value", and i as the "green value" for some extra color coolness.
  */
 public class MagicWorms extends PApplet {
-	static final int WIDTH = 600;
-	static final int HEIGHT = 400;
-
+	static final int WIDTH = 1920;
+	static final int HEIGHT = 900;
+	int[] colors = new int[1000];
+	
+	
 	@Override
 	public void settings() {
 		size(WIDTH, HEIGHT);
@@ -41,15 +46,24 @@ public class MagicWorms extends PApplet {
 	@Override
 	public void setup() {
 		background(0, 0, 0);
+		for(int i = 0 ; i < colors.length; i++) {
+			colors[i] = new Color(new Random().nextInt(255), new Random().nextInt(255), new Random().nextInt(255)).getRGB();
+			
+		}
+	
 	}
 
 	@Override
 	public void draw() {
-		noStroke();
-		for (int i = 0; i < 300; i++) {
-ellipse(i,i,30,20);
+		//background(0,0,0);
+		makeMagical();
+		fill(100,100,255);
+		for (int i = 0; i < colors.length; i++) {
+			
+			fill ( colors[i]   );
+			ellipse(getWormX(i) ,getWormY(i) , 30, 20);
 		}
-		random();
+
 	}
 
 	static public void main(String[] args) {
@@ -58,7 +72,7 @@ ellipse(i,i,30,20);
 
 	/*********************** DO NOT MODIFY THE CODE BELOW ********************/
 	float frequency = 0.001f;
-	float noiseInterval = PI;
+	float noiseInterval = (float) (3.0*PI/23.0);
 
 	void makeMagical() {
 		fill(0, 0, 0, 10);
@@ -67,10 +81,10 @@ ellipse(i,i,30,20);
 	}
 
 	float getWormX(int i) {
-		return map(noise(i * noiseInterval + frameCount * frequency), 0, 1, 0, width);
+		return map(noise(i * noiseInterval + frameCount * frequency), 0, 1, 0, WIDTH);
 	}
 
 	float getWormY(int i) {
-		return map(noise(i * noiseInterval + 1 + frameCount * frequency), 0, 1, 0, height);
+		return map(noise(i * noiseInterval + 1 + frameCount * frequency), 0, 1, 0, HEIGHT);
 	}
 }
