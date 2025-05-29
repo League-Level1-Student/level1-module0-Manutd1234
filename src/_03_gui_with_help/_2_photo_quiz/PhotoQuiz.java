@@ -26,9 +26,9 @@ public class PhotoQuiz {
 		// 1. find an image on the internet, and put its URL in a String
 		// variable (from your browser, right click on the image, and select
 		// “Copy Image Address” )
-
+String photo = "https://static.wikia.nocookie.net/p__/images/f/fd/Batman_%28Prime_Earth%29.jpg/revision/latest?cb=20230718090804&path-prefix=protagonist";
 		// 2. create a variable of type "Component" that will hold your image
-
+Component bat = "https://static.wikia.nocookie.net/p__/images/f/fd/Batman_%28Prime_Earth%29.jpg/revision/latest?cb=20230718090804&path-prefix=protagonist";
 		// 3. use the "createImage()" method below to initialize your Component
 
 		// 4. add the image to the quiz window
