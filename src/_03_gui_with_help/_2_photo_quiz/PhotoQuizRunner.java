@@ -4,7 +4,6 @@ package _03_gui_with_help._2_photo_quiz;
  *    Level 1
  */
 
-
 public class PhotoQuizRunner {
 	public static void main(String[] args)  {
 		new PhotoQuiz().run();

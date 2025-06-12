@@ -28,17 +28,17 @@ public class PhotoQuiz {
 		// “Copy Image Address” )
 String photo = "https://static.wikia.nocookie.net/p__/images/f/fd/Batman_%28Prime_Earth%29.jpg/revision/latest?cb=20230718090804&path-prefix=protagonist";
 		// 2. create a variable of type "Component" that will hold your image
-Component bat = "https://static.wikia.nocookie.net/p__/images/f/fd/Batman_%28Prime_Earth%29.jpg/revision/latest?cb=20230718090804&path-prefix=protagonist";
-		// 3. use the "createImage()" method below to initialize your Component
-
+Component bat = createImage(photo);
 		// 4. add the image to the quiz window
 
 		// 5. call the pack() method on the quiz window
-
+quizWindow.pack();
 		// 6. ask a question that relates to the image
-
+String  person = JOptionPane.showInputDialog("Who is the person in the image?");
 		// 7. print "CORRECT" if the user gave the right answer
-
+if(person == true) {
+	JOptionPane.showMessageDialog(null, "correct");
+}
 		// 8. print "INCORRECT" if the answer is wrong
 
 		// 9. remove the component from the quiz window (you may not see the
